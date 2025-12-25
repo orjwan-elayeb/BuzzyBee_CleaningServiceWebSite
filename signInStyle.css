@@ -502,6 +502,16 @@ html {
   .container {
     margin: 0;
   }
+
+    
+  .toast {
+    right: 12px;
+    left: 12px;
+    bottom: 20px;
+    max-width: calc(100% - 24px);
+    font-size: 0.95rem;
+  }
+  
 }
 
 @media (max-height: 700px) and (max-width: 700px) {
@@ -597,6 +607,9 @@ html {
     font-size: 0.75rem;
     margin-top: 20px;
   }
+
+  
+
 }
 
 
