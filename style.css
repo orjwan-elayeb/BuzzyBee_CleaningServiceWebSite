@@ -1028,12 +1028,16 @@ footer {
     height: 60px;
   }
 
+  .hero {
+    height: calc(100vh - 60px);
+  }
+
   .service-card {
     scroll-margin-top: 60px;
   }
 
   .section {
-    
+
     scroll-margin-top: 60px;
   }
 
