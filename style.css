@@ -1091,7 +1091,7 @@ footer {
   .toast {
     right: 12px;
     left: 12px;
-    bottom: 12px;
+    bottom: 20px;
     max-width: calc(100% - 24px);
     font-size: 0.95rem;
   }
