@@ -33,16 +33,25 @@ It provides users with an easy and intuitive way to browse services, book cleani
 ## 📂 Project Structure
 BuzzyBee_CleaningServiceWebSite/
 │
-├── index.html # Main landing page
-├── signin.html # Sign in page
-├── signup.html # Sign up page
-├── style.css # Main stylesheet
-├── signInStyle.css # Sign in page styles
-├── signupStyle.css # Sign up page styles
-├── script.js # JavaScript logic
+├── index.html            # Main landing page
+├── signin.html           # Sign in page
+├── signup.html           # Sign up page
+│
+├── style.css             # Main stylesheet
+├── signInStyle.css       # Sign in page styles
+├── signupStyle.css       # Sign up page styles
+│
+├── script.js             # JavaScript logic
+│
 ├── assets/
-│ └── image/ # Images and logos
+│   └── image/
+│       ├── logo.png
+│       ├── logo-darkMode.png
+│       ├── cleaning_pic.avif
+│       └── splash.png
+│
 └── Favicon.ico
+
 
 
 ---
