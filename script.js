@@ -311,36 +311,45 @@ if (bookingForm) {
  */
 
 const sendBtn = document.querySelector(".send-btn");
-const toast = document.getElementById("toast");
-
-function showToast(message) {
-  if (!toast) return;
-
-  toast.textContent = message;
-  toast.classList.add("show");
-
-  setTimeout(() => {
-    toast.classList.remove("show");
-  }, 2500);
-}
 
 if (sendBtn) {
-  sendBtn.addEventListener("click", () => {
+  sendBtn.addEventListener("click", async () => {
     const codeElement = document.querySelector(".referral-code");
     if (!codeElement) return;
 
     const link = codeElement.innerText.trim();
 
-    navigator.clipboard
-      .writeText(link)
-      .then(() => {
-        showToast("📋 تم نسخ رابط الدعوة بنجاح!");
-      })
-      .catch(() => {
-        showToast("❌ لم يتم نسخ الرابط");
-      });
+    // 1) Modern clipboard (works best on HTTPS)
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(link);
+        showToast("تم نسخ رابط الدعوة بنجاح");
+        return;
+      }
+    } catch (e) {
+      // continue to fallback
+    }
+
+    // 2) Fallback for phones / http / older browsers
+    try {
+      const temp = document.createElement("textarea");
+      temp.value = link;
+      temp.setAttribute("readonly", "");
+      temp.style.position = "fixed";
+      temp.style.top = "-1000px";
+      document.body.appendChild(temp);
+
+      temp.select();
+      document.execCommand("copy");
+      document.body.removeChild(temp);
+
+      showToast("تم نسخ رابط الدعوة بنجاح");
+    } catch (e) {
+      showToast("تعذر نسخ الرابط، انسخه يدويًا");
+    }
   });
 }
+
 
 /*تغير الوضع بين الداكن والفاتح */
 /* ===========================
