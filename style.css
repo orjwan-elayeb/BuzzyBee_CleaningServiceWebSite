@@ -11,18 +11,16 @@
   --accent-hover: #e68900;
 
   /* Hero Gradient - Light */
-  --hero-gradient: linear-gradient(
-    rgba(44, 140, 255, 0.85),
-    rgba(26, 111, 216, 0.90)
-  );
+  --hero-gradient: linear-gradient(rgba(44, 140, 255, 0.85),
+      rgba(26, 111, 216, 0.90));
 
   /* Header - Light */
   --header-bg: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
   --header-text: #ffffff;
   --header-title: #ffffff;
   --header-muted: rgba(255, 255, 255, 0.85);
-  --header-accent: #ffffff;        
-  --header-link-hover: #ffeb3b;     
+  --header-accent: #ffffff;
+  --header-link-hover: #ffeb3b;
   --header-btn-bg: rgba(255, 255, 255, 0.15);
   --header-btn-hover: rgba(255, 255, 255, 0.25);
 
@@ -48,19 +46,17 @@ body.dark-mode {
 
   /* Header - Dark */
   --header-bg: linear-gradient(135deg, #0b1f44 0%, #102a5c 100%);
-  --header-text: #ffffff;   
-  --header-title: #facc15;     
+  --header-text: #ffffff;
+  --header-title: #facc15;
   --header-muted: #cfe0ff;
-  --header-accent: #ffffff;        
-  --header-link-hover: #facc15;    
+  --header-accent: #ffffff;
+  --header-link-hover: #facc15;
   --header-btn-bg: rgba(255, 255, 255, 0.10);
   --header-btn-hover: rgba(255, 255, 255, 0.18);
 
   /* Hero Gradient - Dark */
-  --hero-gradient: linear-gradient(
-    rgba(11, 31, 68, 0.88),
-    rgba(16, 42, 92, 0.95)
-  );
+  --hero-gradient: linear-gradient(rgba(11, 31, 68, 0.88),
+      rgba(16, 42, 92, 0.95));
 
   /* Surfaces - Dark */
   --bg: #0e224d;
@@ -124,7 +120,7 @@ body {
 .section {
   padding: 60px 0 0 0;
   /* لانه الهيدر فوق واخد 100px فهكي يكون السكرول بالتحديد عالعنوان */
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
 }
 
 
@@ -160,7 +156,7 @@ body {
 
 .service-card,
 .feature,
-.stat-card{
+.stat-card {
   will-change: transform;
 }
 
@@ -293,7 +289,7 @@ body {
 
 
 header {
-  height: 100px;
+  height: 80px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -464,7 +460,7 @@ nav ul li a.active::after {
     url('assets/image/cleaning_pic.avif');
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -511,8 +507,9 @@ nav ul li a.active::after {
   /* Contains the image/icon */
   display: flex;
   flex-direction: column;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
 }
+
 
 /* Highlight for JS interaction */
 .service-card.highlight {
@@ -967,7 +964,8 @@ footer {
 .toast {
   position: fixed;
   bottom: 30px;
-  right: 30px; /* RTL */
+  right: 30px;
+  /* RTL */
   background: var(--card);
   color: var(--text);
   padding: 14px 22px;
@@ -1024,6 +1022,19 @@ footer {
     display: grid;
     grid-template-columns: auto 1fr auto;
     padding: 0 15px;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .service-card {
+    scroll-margin-top: 60px;
+  }
+
+  .section {
+    
+    scroll-margin-top: 60px;
   }
 
   .logo {
@@ -1084,7 +1095,7 @@ footer {
 
   .referral-code {
     padding: 2px 5px;
-    
+
 
   }
 
