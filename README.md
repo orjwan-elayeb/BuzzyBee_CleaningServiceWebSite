@@ -31,6 +31,7 @@ It provides users with an easy and intuitive way to browse services, book cleani
 ---
 
 ## 📂 Project Structure
+```text
 BuzzyBee_CleaningServiceWebSite/
 │
 ├── index.html            # Main landing page
@@ -52,7 +53,7 @@ BuzzyBee_CleaningServiceWebSite/
 │
 └── Favicon.ico
 
-
+```
 ---
 
 ## 🚀 How to Run the Project
@@ -63,6 +64,9 @@ BuzzyBee_CleaningServiceWebSite/
    *(Live Server is recommended)*
 
 ### Live Demo
+
 This project is hosted for free using **GitHub Pages**.
 
-🔗 Live URL: 
+🔗 [View Live Website](https://orjwan-elayeb.github.io/BuzzyBee_CleaningServiceWebSite/)
+
+
