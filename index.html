@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/ico" href="Favicon.ico">
+  <link rel="preload" as="image" href="assets/image/cleaning_pic.avif" type="image/avif">
+
+  <meta name="description"
+    content="تسعى Buzzy Bee لخدمات التنظيف إلى تقديم خدمات تنظيف متكاملة بمعايير احترافية عالية، مع الالتزام بالجودة، الدقة في المواعيد، واستخدام أفضل مواد التنظيف الآمنة، لضمان رضا عملائنا الدائم.">
+  <title>Buzzy Bee</title>
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+
+  <div id="page-loader">
+    <img src="assets/image/splash.png" alt="Buzzy Bee Logo">
+  </div>
+
+  <!-- header -->
+
+  <header>
+    <div class="container header-container">
+      <!--menu-->
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="#home">الرئيسية</a>
+          <a href="#about-us">عنا</a>
+          <a href="#services">الخدمات</a>
+          <a href="#offers">العروض</a>
+          <a href="#booking">الحجز</a>
+          <a href="signin.html">تسجيل الدخول</a>
+        </div>
+      </div>
+
+      <div class="logo">
+        <img class="logo-pic" src="assets/image/logo (1).png" alt="logo">
+        <div class="logo-title">Buzzy Bee</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+          <li><a href="#about-us"><i class="fa-solid fa-users"></i>عنا</a></li>
+          <li><a href="#services"><i class="fas fa-concierge-bell"></i> الخدمات</a></li>
+          <li><a href="#offers"><i class="fas fa-tag"></i> العروض</a></li>
+          <li><a href="#booking"><i class="fas fa-calendar-check"></i> الحجز</a></li>
+          <li><a href="signin.html"><i class="fas fa-user"></i> تسجيل الدخول</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-actions">
+        <button class="themeBtn" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main>
+    <!-- hero -->
+    <section class="hero section" id="home">
+      <div class="container">
+        <h1>موقعك الأول للحصول على خدمات التنظيف التي تحتاجها</h1>
+        <p>نوفر لك أفضل خدمات التنظيف مع ضمان الجودة والسرعة. تواصل معنا مجاناً واحصل على عروض حصرية للمشتركين.
+        </p>
+        <div class="hero-btns">
+          <a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> احجز خدمة الآن</a>
+          <a href="#offers" class="btn btn-secondary"><i class="fas fa-tags"></i> تصفح العروض</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section-title">خدماتنا</h2>
+        <p class="section-subtitle">نقدم مجموعة متكاملة من خدمات التنظيف عالية الجودة التي تلبي جميع احتياجاتك
+        </p>
+
+        <div class="services-grid">
+
+          <!-- service card -->
+
+          <div class="service-card" data-service="house" id="house">
+            <div class="service-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">تنظيف منزلك</h3>
+              <p class="service-desc">خدمة تنظيف شاملة للمنازل تشمل جميع الغرف والمطابخ والحمامات باستخدام
+                أفضل مواد التنظيف.</p>
+              <div class="service-price">
+                <span class="price">120 د.ل</span>
+                <button class="book-btn" href="#booking">احجز الآن</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card" id="apartment" data-service="apartment">
+            <div class="service-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">تنظيف شقتك</h3>
+              <p class="service-desc">تنظيف متكامل للشقق السكنية مع تركيز خاص على التفاصيل وضمان رائحة
+                منعشة في كل مكان.</p>
+              <div class="service-price">
+                <span class="price">90 د.ل</span>
+                <button class="book-btn" href="#booking">احجز الآن</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-card" id="carpet" data-service="carpet">
+            <div class="service-icon">
+              <i class="fas fa-rug"></i>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">تنظيف سجادك</h3>
+              <p class="service-desc">تنظيف عميق للسجاد والموكيت باستخدام أحدث التقنيات لإزالة البقع
+                والروائح الكريهة.</p>
+              <div class="service-price">
+                <span class="price">70 د.ل</span>
+                <button class="book-btn" href="#booking">احجز الآن</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section">
+      <div class="container">
+        <h2 class="section-title">مميزاتنا</h2>
+
+        <div class="features-grid">
+          <div class="feature">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>التوصيل المجاني</h3>
+            <p>نوفر خدمة التوصيل المجاني لجميع الخدمات داخل المدينة</p>
+          </div>
+
+          <div class="feature">
+            <i class="fas fa-calendar-check"></i>
+            <h3>الحجز في نفس اليوم</h3>
+            <p>يمكنك حجز أي خدمة والحصول عليها في نفس اليوم</p>
+          </div>
+
+          <div class="feature">
+            <i class="fas fa-tags"></i>
+            <h3>تخفيضات حصرية</h3>
+            <p>عروض وتخفيضات دائمة للمشتركين والعملاء الدائمين</p>
+          </div>
+
+          <div class="feature">
+            <i class="fas fa-headset"></i>
+            <h3>دعم فني متواصل</h3>
+            <p>فريق دعم فني متاح على مدار الساعة لمساعدتك</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats -->
+    <section class="stats section" id="stats">
+      <div class="container">
+        <h2 class="section-title">إنجازاتنا بالأرقام</h2>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="1200"><span class="stat-value">0</span><span
+                class="plus-sign">+</span></div>
+            <div class="stat-label"> عميل سعيد</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="3000"><span class="stat-value">0</span><span
+                class="plus-sign">+</span></div>
+            <div class="stat-label"> خدمة منجزة</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="24">0</div>
+            <div class="stat-label">ساعة دعم متواصل</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">سنوات خبرة</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Referral Section -->
+    <section class="referral section" id="offers">
+      <div class="container">
+        <h2>احصل على خصم 2% عند اشتراك شخص من طرفك</h2>
+        <p>شارك رابط الدعوة الخاص بك مع أصدقائك وعائلتك واحصل على خصم 2% على كل خدمة يطلبونها من خلال رابطك</p>
+
+        <div class="referral-row">
+          <div class="referral-code">
+            https://BuzzyBee.com/invite/OrjwanRaghad
+          </div>
+          <button class="btn btn-secondary send-btn">ارسال الرابط</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking section" id="booking">
+      <div class="container">
+        <div class="booking-form">
+          <h2 class="form-title">احجز خدمتك الآن</h2>
+          <form id="bookingForm" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">الاسم الكامل *</label>
+                <input type="text" id="name" class="form-control" placeholder="مثال:ارجوان العائب" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">رقم الهاتف *</label>
+                <input type="tel" id="phone" class="form-control" pattern="09[1-9][0-9]{7}" placeholder="09XXXXXXXX"
+                  required>
+
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">نوع الخدمة *</label>
+              <select id="service" class="form-control" required>
+                <option value="">اختر الخدمة المطلوبة</option>
+                <option value="house">تنظيف منزلك</option>
+                <option value="apartment">تنظيف شقتك</option>
+                <option value="carpet">تنظيف سجادك</option>
+              </select>
+
+              <div class="price-box">
+                السعر المتوقع: <span id="servicePrice">—</span> د.ل
+              </div>
+
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">التاريخ المطلوب *</label>
+                <input type="date" id="date" class="form-control" min="<?= today ?>" required>
+
+              </div>
+
+              <div class="form-group">
+                <label for="time">الوقت المفضل *</label>
+                <select id="time" class="form-control" required>
+                  <option value="">اختر الوقت المناسب</option>
+                  <option value="morning">8 صباحاً - 12 ظهراً</option>
+                  <option value="afternoon">12 ظهراً - 4 عصراً</option>
+                  <option value="evening">4 عصراً - 8 مساءً</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">العنوان التفصيلي *</label>
+              <textarea id="address" class="form-control" rows="3" placeholder="الحي، الشارع، رقم المنزل، الشقة..."
+                required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">ملاحظات إضافية (اختياري)</label>
+              <textarea id="notes" class="form-control" rows="2" placeholder="ملاحظات خاصة حول الخدمة..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+              <i class="fas fa-check-circle"></i> تأكيد الحجز
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Confirmation Modal -->
+
+    <div class="modal" id="confirmModal" aria-hidden="true">
+      <div class="modal-box" role="dialog" aria-modal="true">
+
+        <!-- زر الإغلاق الوحيد -->
+        <button class="modal-close" id="modalCloseBtn" aria-label="إغلاق">×</button>
+
+        <h2>✅ تم استلام طلبك بنجاح</h2>
+        <p class="modal-sub">
+          شكرًا لاختيارك <strong>Buzzy Bee</strong> 🐝
+          سنتواصل معك خلال وقت قصير لتأكيد الموعد والتفاصيل.
+        </p>
+
+        <div class="modal-summary" id="modalSummary"></div>
+
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <section class="map section" id="map">
+      <div class="map-container">
+        <div class="map-header">
+          <h2 class="section-title">موقعنا الحالي</h2>
+          <p class="section-subtitle">يمكنك مشاهدة موقعنا على الخريطة (طرابلس - ليبيا)</p>
+        </div>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps?q=Tripoli,Libya&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="scroll-top" id="scrollTopBtn" title="الرجوع للأعلى">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+
+  <!-- Footer -->
+  <section id="about-us" class="section footer-section">
+    <footer >
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>خدمات التنظيف</h3>
+          <p>نقدم أفضل خدمات التنظيف المنزلي والمكتبي بأسعار تنافسية وجودة عالية. فريق عمل مدرب وأدوات حديثة
+            لضمان رضاك.</p>
+          <div class="social-links">
+            <a href="https://twitter.com/merrymaids" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/merrymaids" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/merrymaids" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#offers">العروض</a></li>
+            <li><a href="#booking">الحجز</a></li>
+            <li><a href="signin.html">تسجيل دخول</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>خدماتنا</h3>
+          <ul>
+            <li><a href="#house">تنظيف المنازل</a></li>
+            <li><a href="#apartment">تنظيف الشقق</a></li>
+            <li><a href="#carpet">تنظيف السجاد</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>معلومات التواصل</h3>
+          <ul>
+            <li><i class="fas fa-phone"></i> 0944453531</li>
+            <li><i class="fas fa-envelope"></i> info@clean-service.com</li>
+            <li><i class="fas fa-map-marker-alt"></i>طرابلس - ليبيا</li>
+            <li><i class="fas fa-clock"></i> 8 ص - 10 م طوال الأسبوع</li>
+            <li><i class="fas fa-laptop-code"></i>تطوير: ارجوان العائب & رغد اعمار</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>جميع الحقوق محفوظة &copy; 2025 خدمات التنظيف | سياسات وشروط الاستخدام | خصوصية البيانات</p>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+  <div id="toast" class="toast">📋 تم نسخ رابط الدعوة بنجاح!</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
