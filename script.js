@@ -418,24 +418,53 @@ sections.forEach(section => spyObserver.observe(section));
 //sign in / sign up
 
 
+// function fakeAuth(provider) {
+//   showToast(`تم التسجيل عبر ${provider} ✅`);
+
+//   setTimeout(() => {
+//     window.location.href = "index.html";
+//   }, 2000);
+// }
+
+// function showToast(message) {
+//   const toast = document.createElement("div");
+//   toast.className = "toast-message";
+//   toast.textContent = message;
+
+//   document.body.appendChild(toast);
+
+//   setTimeout(() => toast.classList.add("show"), 100);
+//   setTimeout(() => {
+//     toast.classList.remove("show");
+//     setTimeout(() => toast.remove(), 300);
+//   }, 1800);
+// }
+
+function showToast(message) {
+  // لو موجود toast ثابت في الصفحة استخدمه
+  let toast = document.getElementById("toast");
+
+  // لو مش موجود (زي صفحات signin/signup) أنشئه مرة وحدة
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "toast";
+    toast.className = "toast";
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(toast._hideTimer);
+  toast._hideTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2500);
+}
+
 function fakeAuth(provider) {
-  showToast(`تم التسجيل عبر ${provider} ✅`);
+  showToast(`تم التسجيل عبر ${provider} بنجاح`);
 
   setTimeout(() => {
     window.location.href = "index.html";
-  }, 2000);
-}
-
-function showToast(message) {
-  const toast = document.createElement("div");
-  toast.className = "toast-message";
-  toast.textContent = message;
-
-  document.body.appendChild(toast);
-
-  setTimeout(() => toast.classList.add("show"), 100);
-  setTimeout(() => {
-    toast.classList.remove("show");
-    setTimeout(() => toast.remove(), 300);
-  }, 1800);
+  }, 1200);
 }

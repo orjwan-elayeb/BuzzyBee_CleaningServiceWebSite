@@ -678,10 +678,9 @@ nav ul li a.active::after {
 .referral-code {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 12px 25px;
-  font-size: 1.2rem;
   border-radius: 10px;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 500;
   border: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
@@ -1085,6 +1084,7 @@ footer {
 
   .referral-code {
     padding: 2px 5px;
+     
 
   }
 }

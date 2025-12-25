@@ -598,26 +598,27 @@ html {
 }
 
 
-.toast-message {
+.toast {
   position: fixed;
   bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-
-  background: #2563eb;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-size: 0.95rem;
-  font-weight: 500;
-
+  right: 30px;
+  background: #fff;
+  color: #333;
+  padding: 14px 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  border-right: 5px solid #ff9800;
+  font-weight: 600;
   opacity: 0;
-  transition: all 0.3s ease;
-  z-index: 9999;
+  transform: translateY(20px);
+  transition: all 0.35s ease;
+  z-index: 99999;
+  pointer-events: none;
 }
 
-.toast-message.show {
+.toast.show {
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
 }
+
 
