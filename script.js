@@ -15,13 +15,6 @@ const servicePrices = {
  * 2. PAGE LOADER
  * =========================================
  */
-window.addEventListener("load", () => {
-  const loader = document.getElementById("page-loader");
-  // Slight delay to ensure the logo animation is seen
-  setTimeout(() => {
-    loader.classList.add("hide");
-  }, 600);
-});
 
 /**
  * =========================================
@@ -33,13 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.querySelector(".dropbtn");
   const menuContent = document.querySelector(".dropdown-content");
 
-  if (menuBtn) {
+  if (menuBtn && menuContent) {
     menuBtn.addEventListener("click", (e) => {
-      e.stopPropagation(); // Prevent closing immediately when clicking button
+      e.stopPropagation();
       menuContent.classList.toggle("show");
     });
 
-    // Close menu when clicking outside
     document.addEventListener("click", (e) => {
       if (!menuBtn.contains(e.target) && !menuContent.contains(e.target)) {
         menuContent.classList.remove("show");
@@ -55,30 +47,29 @@ document.addEventListener("DOMContentLoaded", () => {
       if (targetId === "#") return;
 
       const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-      }
+      if (targetElement) targetElement.scrollIntoView({ behavior: "smooth" });
     });
   });
 
   // --- Scroll To Top Button ---
   const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      scrollTopBtn.style.display = "flex";
-      // Small animation for button appearance
-      setTimeout(() => scrollTopBtn.classList.add("show"), 10);
-    } else {
-      scrollTopBtn.classList.remove("show");
-      scrollTopBtn.style.display = "none";
-    }
-  });
+  if (scrollTopBtn) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.style.display = "flex";
+        setTimeout(() => scrollTopBtn.classList.add("show"), 10);
+      } else {
+        scrollTopBtn.classList.remove("show");
+        scrollTopBtn.style.display = "none";
+      }
+    });
 
-  scrollTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-});
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+}); // ✅ هذا الإغلاق الصح للـ DOMContentLoaded
 
 /**
  * =========================================
@@ -350,7 +341,6 @@ if (sendBtn) {
   });
 }
 
-
 /*تغير الوضع بين الداكن والفاتح */
 /* ===========================
   Theme (Dark/Light) + Save
@@ -400,11 +390,11 @@ const navLinks = document.querySelectorAll("nav ul li a");
 
 const spyObserver = new IntersectionObserver(
   (entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute("id");
 
-        navLinks.forEach(link => {
+        navLinks.forEach((link) => {
           link.classList.remove("active");
           if (link.getAttribute("href") === `#${id}`) {
             link.classList.add("active");
@@ -414,18 +404,16 @@ const spyObserver = new IntersectionObserver(
     });
   },
   {
-    root: null,               // viewport
-    rootMargin: "-40% 0px -50% 0px", 
-    threshold: 0
+    root: null, // viewport
+    rootMargin: "-40% 0px -50% 0px",
+    threshold: 0,
   }
 );
 
 // Observe each section
-sections.forEach(section => spyObserver.observe(section));
-
+sections.forEach((section) => spyObserver.observe(section));
 
 //sign in / sign up
-
 
 // function fakeAuth(provider) {
 //   showToast(`تم التسجيل عبر ${provider} ✅`);
