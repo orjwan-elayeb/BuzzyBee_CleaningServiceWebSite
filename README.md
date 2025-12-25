@@ -37,6 +37,8 @@ It provides users with an easy and intuitive way to browse services, book cleani
 
 - **Raghad Ammar** – Front-End Developer  
   GitHub: https://github.com/RaghadAmmar
+
+  As part of an academic front-end web development project.
   
 ---
 
