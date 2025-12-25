@@ -1077,14 +1077,24 @@ footer {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   html {
     font-size: 12px;
   }
 
   .referral-code {
     padding: 2px 5px;
-     
+    
 
   }
+
+  .toast {
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
+    font-size: 0.95rem;
+  }
+
+
 }
