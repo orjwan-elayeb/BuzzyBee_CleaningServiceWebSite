@@ -663,6 +663,7 @@ nav ul li a.active::after {
   border-radius: 20px;
   text-align: center;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .referral-row {
@@ -1072,6 +1073,18 @@ footer {
 
   .referral-code {
     padding: 6px 10px;
+
+  }
+
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+
+  .referral-code {
+    padding: 2px 5px;
 
   }
 }
