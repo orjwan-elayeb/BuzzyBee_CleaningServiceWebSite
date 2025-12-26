@@ -985,6 +985,10 @@ footer {
   transform: translateY(0);
 }
 
+.highlight{
+  border: 3px solid  var(--header-link-hover);
+
+}
 
 /* =========================================
   14. MEDIA QUERIES (RESPONSIVE)
