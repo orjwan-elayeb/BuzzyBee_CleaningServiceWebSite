@@ -15,6 +15,7 @@ const servicePrices = {
  * 2. PAGE LOADER
  * =========================================
  */
+
 window.addEventListener("load", () => {
   const loader = document.getElementById("page-loader");
   if (!loader) return;
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-}); // ✅ هذا الإغلاق الصح للـ DOMContentLoaded
+}); 
 
 /**
  * =========================================
