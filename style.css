@@ -1007,7 +1007,7 @@ footer {
   transform: translateY(0);
 }
 
-/* Delays (اختياري لكن انت مستخدمهم في JS) */
+/* Delays */
 .reveal-delay-1 {
   transition-delay: 0.1s;
 }
