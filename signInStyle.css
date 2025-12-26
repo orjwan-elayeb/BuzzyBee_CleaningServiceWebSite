@@ -44,7 +44,7 @@ html {
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
   color: white;
   padding: 50px 40px;
-  
+
 
   display: flex;
   flex-direction: column;
@@ -96,6 +96,7 @@ html {
   margin-bottom: 20px;
   position: relative;
 }
+
 .welcome-section h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -293,12 +294,15 @@ html {
   html {
     font-size: 15px;
   }
+
   body {
     overflow: auto;
   }
+
   .container {
     max-width: 1000px;
   }
+
   .btn-social {
     margin-top: 10px;
   }
@@ -351,11 +355,13 @@ html {
   html {
     font-size: 13px;
   }
+
   body {
     height: 100vh;
     /*لان الجهاز صغير وممكن يفتح الكيبورد */
     overflow: auto;
   }
+
   .container {
     max-width: 100%;
   }
@@ -406,7 +412,7 @@ html {
 
   .welcome-section {
     flex: 0 0 auto;
-    padding: 3px 10px;
+    padding: 10px 10px;
 
     justify-content: center;
     align-items: center;
@@ -424,13 +430,13 @@ html {
 
   .company-subtitle,
   .features,
-  .welcome-section h1 + p {
+  .welcome-section h1+p {
     display: none;
   }
 
   .welcome-section h1 {
     margin-top: 0px;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
 
     text-align: center;
     font-size: 20px;
@@ -438,7 +444,7 @@ html {
 
   .login-section {
     flex: 1;
-    padding: 20px 50px;
+    padding: 0px 50px;
 
     display: flex;
     flex-direction: column;
@@ -448,8 +454,8 @@ html {
   }
 
   .login-header {
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-top: 0px;
   }
 
   .login-section form {
@@ -494,27 +500,20 @@ html {
   html {
     font-size: 11px;
   }
+
   body {
     height: 100vh;
     /*لان الجهاز صغير وممكن يفتح الكيبورد */
     overflow: auto;
   }
+
   .container {
     margin: 0;
   }
-
-    
-  .toast {
-    right: 12px;
-    left: 12px;
-    bottom: 20px;
-    max-width: calc(100% - 24px);
-    font-size: 0.95rem;
-  }
-  
 }
 
 @media (max-height: 700px) and (max-width: 700px) {
+
   body,
   html {
     min-height: 100vh;
@@ -523,10 +522,12 @@ html {
     overflow-y: auto;
     overflow-x: hidden;
   }
+
   .container {
     min-height: 100vh;
     height: auto;
   }
+
   .logo {
     width: 80px;
     height: 80px;
@@ -567,6 +568,7 @@ html {
 
   .login-header {
     margin-bottom: 10px;
+    margin-top: 0px;
   }
 
   .login-header h2 {
@@ -595,21 +597,21 @@ html {
     padding: 12px;
     margin-bottom: 0px;
   }
+
   .forgot-password a {
     font-size: 0.75rem;
     margin-top: 5px;
   }
+
   .btn-social {
     margin-top: 10px;
     padding: 10px;
   }
+
   .signup-Now {
     font-size: 0.75rem;
     margin-top: 20px;
   }
-
-  
-
 }
 
 
@@ -621,7 +623,7 @@ html {
   color: #333;
   padding: 14px 22px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   border-right: 5px solid #ff9800;
   font-weight: 600;
   opacity: 0;
