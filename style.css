@@ -654,7 +654,7 @@ nav ul li a.active::after {
   9. REFERRAL SECTION
    ========================================= */
 .referral {
-  background: linear-gradient(135deg, #ff9800 0%, #e68900 100%);
+  background: linear-gradient(135deg, var(--header-link-hover) 0%, var(--accent) 100%);
   color: #fff;
   padding: 50px 20px;
   border-radius: 20px;
