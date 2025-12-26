@@ -414,8 +414,8 @@ const spyObserver = new IntersectionObserver(
   },
   {
     root: null, // viewport
-    rootMargin: "-40% 0px -50% 0px",
-    threshold: 0,
+    rootMargin: "-10% 0px -70% 0px",
+threshold: 0
   }
 );
 
