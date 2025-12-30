@@ -1,321 +1,348 @@
 <!DOCTYPE html>
 
 <html dir="ltr" lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="style-en.css" rel="stylesheet"/>
-<link href="favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="/BuzzyBee_CleaningServiceWebSite/assets/favicon.ico" rel="icon" type="image/x-icon"/>
-<link as="image" href="assets/image/cleaning_pic.avif" rel="preload" type="image/avif"/>
-<meta content="Buzzy Bee Cleaning Services provides professional, reliable home and office cleaning in Tripoli, Libya. High quality, on-time service, and safe cleaning materials." name="description"/>
-<title>Buzzy Bee</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="style-en.css?v=4" rel="stylesheet" />
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="/BuzzyBee_CleaningServiceWebSite/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <link as="image" href="assets/image/cleaning_pic.avif" rel="preload" type="image/avif" />
+  <meta
+    content="Buzzy Bee Cleaning Services provides professional, reliable home and office cleaning in Tripoli, Libya. High quality, on-time service, and safe cleaning materials."
+    name="description" />
+  <title>Buzzy Bee</title>
 </head>
+
 <body>
-<!-- Page Loader -->
-<div id="page-loader">
-<img alt="Buzzy Bee Logo" src="assets/image/splash.png"/>
-</div>
-<!-- header -->
-<header>
-<div class="container header-container">
-<!--menu-->
-<div class="dropdown">
-<button class="dropbtn"><i class="fas fa-bars"></i></button>
-<div class="dropdown-content">
-<a href="#home">Home</a>
-<a href="#about-us">About</a>
-<a href="#services">Services</a>
-<a href="#offers">Offers</a>
-<a href="#booking">Booking</a>
-<a href="signin.html">Sign In</a>
-</div>
-</div>
-<div class="logo">
-<img alt="logo" class="logo-pic" src="assets/image/logo (1).png"/>
-<div class="logo-title">Buzzy Bee</div>
-</div>
-<nav>
-<ul>
-<li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
-<li><a href="#about-us"><i class="fa-solid fa-users"></i>About</a></li>
-<li><a href="#services"><i class="fas fa-concierge-bell"></i>Services</a></li>
-<li><a href="#offers"><i class="fas fa-tag"></i>Offers</a></li>
-<li><a href="#booking"><i class="fas fa-calendar-check"></i>Booking</a></li>
-<li><a href="signin.html"><i class="fas fa-user"></i>Sign In</a></li>
-</ul>
-</nav>
-<div class="user-actions">
-<button class="themeBtn" id="themeToggle">
-<i class="fas fa-moon"></i>
-</button>
- <!-- زر الرجوع للعربي -->
-  <a href="index.html" class="langBtn">AR</a>
-</div>
-</div>
-</div>
-</header>
-<!-- main -->
-<main>
-<!-- hero -->
-<section class="hero section" id="home">
-<div class="container">
-<h1>Your #1 place for the cleaning services you need</h1>
-<p>We provide top-quality cleaning with guaranteed speed and reliability. Contact us for free and get exclusive member offers.</p>
-<div class="hero-btns">
-<a class="btn btn-primary" href="#booking"><i class="fas fa-calendar-alt"></i>Book a Service</a>
-<a class="btn btn-secondary" href="#offers"><i class="fas fa-tags"></i>Browse Offers</a>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="services section" id="services">
-<div class="container">
-<h2 class="section-title">Our Services</h2>
-<p class="section-subtitle">We offer a complete range of high‑quality cleaning services to meet all your needs.</p>
-<div class="services-grid">
-<!-- service card -->
-<div class="service-card" data-service="house" id="house">
-<div class="service-icon">
-<i class="fas fa-home"></i>
-</div>
-<div class="service-content">
-<h3 class="service-title">House Cleaning</h3>
-<p class="service-desc">A full home cleaning service covering all rooms, kitchens, and bathrooms using the best safe cleaning products.</p>
-<div class="service-price">
-<span class="price">120 LYD</span>
-<button class="book-btn" href="#booking">Book Now</button>
-</div>
-</div>
-</div>
-<div class="service-card" data-service="apartment" id="apartment">
-<div class="service-icon">
-<i class="fas fa-building"></i>
-</div>
-<div class="service-content">
-<h3 class="service-title">Apartment Cleaning</h3>
-<p class="service-desc">Complete apartment cleaning with extra attention to detail and a fresh scent everywhere.</p>
-<div class="service-price">
-<span class="price">90 LYD</span>
-<button class="book-btn" href="#booking">Book Now</button>
-</div>
-</div>
-</div>
-<div class="service-card" data-service="carpet" id="carpet">
-<div class="service-icon">
-<i class="fas fa-rug"></i>
-</div>
-<div class="service-content">
-<h3 class="service-title">Carpet Cleaning</h3>
-<p class="service-desc">Deep cleaning for carpets and rugs using modern techniques to remove stains and bad odors.</p>
-<div class="service-price">
-<span class="price">70 LYD</span>
-<button class="book-btn" href="#booking">Book Now</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Features Section -->
-<section class="features section">
-<div class="container">
-<h2 class="section-title">Why Choose Us</h2>
-<div class="features-grid">
-<div class="feature">
-<i class="fas fa-shipping-fast"></i>
-<h3>Free Travel</h3>
-<p>We provide free travel within the city for all services.</p>
-</div>
-<div class="feature">
-<i class="fas fa-calendar-check"></i>
-<h3>Same‑Day Booking</h3>
-<p>You can book any service and get it on the same day.</p>
-</div>
-<div class="feature">
-<i class="fas fa-tags"></i>
-<h3>Exclusive Discounts</h3>
-<p>Ongoing offers and discounts for members and loyal customers.</p>
-</div>
-<div class="feature">
-<i class="fas fa-headset"></i>
-<h3>24/7 Support</h3>
-<p>Our support team is available around the clock to help you.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- stats -->
-<section class="stats section" id="stats">
-<div class="container">
-<h2 class="section-title">Our Stats</h2>
-<div class="stats-grid">
-<div class="stat-card">
-<div class="stat-number" data-target="1200"><span class="stat-value">0</span><span class="plus-sign">+</span></div>
-<div class="stat-label">Happy Clients</div>
-</div>
-<div class="stat-card">
-<div class="stat-number" data-target="3000"><span class="stat-value">0</span><span class="plus-sign">+</span></div>
-<div class="stat-label">Jobs Completed</div>
-</div>
-<div class="stat-card">
-<div class="stat-number" data-target="24">0</div>
-<div class="stat-label">Support Hours</div>
-</div>
-<div class="stat-card">
-<div class="stat-number" data-target="5">0</div>
-<div class="stat-label">Years of Experience</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Referral Section -->
-<section class="referral section" id="offers">
-<div class="container">
-<h2>Get 2% off when someone signs up via your link</h2>
-<p>Share your referral link with friends and family and get 2% off every service they book through your link.</p>
-<div class="referral-row">
-<div class="referral-code">
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <img alt="Buzzy Bee Logo" src="assets/image/splash.png" />
+  </div>
+  <!-- header -->
+  <header>
+    <div class="container header-container">
+      <!--menu-->
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-bars"></i></button>
+        <div class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about-us">About</a>
+          <a href="#services">Services</a>
+          <a href="#offers">Offers</a>
+          <a href="#booking">Booking</a>
+          <a href="signin.html">Sign In</a>
+
+          <!-- اللغة -->
+          <a href="index.html" class="lang-item">
+            <i class="fas fa-language"></i> Arabic
+          </a>
+        </div>
+      </div>
+      <div class="logo">
+        <img alt="logo" class="logo-pic" src="assets/image/logo (1).png" />
+        <div class="logo-title">Buzzy Bee</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="#about-us"><i class="fa-solid fa-users"></i>About</a></li>
+          <li><a href="#services"><i class="fas fa-concierge-bell"></i>Services</a></li>
+          <li><a href="#offers"><i class="fas fa-tag"></i>Offers</a></li>
+          <li><a href="#booking"><i class="fas fa-calendar-check"></i>Booking</a></li>
+          <li><a href="signin.html"><i class="fas fa-user"></i>Sign In</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="themeBtn" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        
+        </button>
+
+          <a href="index-en.html" class="langBtn" aria-label="English">
+            EN
+          </a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- hero -->
+    <section class="hero section" id="home">
+      <div class="container">
+        <h1>Your #1 place for the cleaning services you need</h1>
+        <p>We provide top-quality cleaning with guaranteed speed and reliability. Contact us for free and get exclusive
+          member offers.</p>
+        <div class="hero-btns">
+          <a class="btn btn-primary" href="#booking"><i class="fas fa-calendar-alt"></i>Book a Service</a>
+          <a class="btn btn-secondary" href="#offers"><i class="fas fa-tags"></i>Browse Offers</a>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">We offer a complete range of high‑quality cleaning services to meet all your needs.
+        </p>
+        <div class="services-grid">
+          <!-- service card -->
+          <div class="service-card" data-service="house" id="house">
+            <div class="service-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">House Cleaning</h3>
+              <p class="service-desc">A full home cleaning service covering all rooms, kitchens, and bathrooms using the
+                best safe cleaning products.</p>
+              <div class="service-price">
+                <span class="price">120 LYD</span>
+                <button class="book-btn" href="#booking">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="service-card" data-service="apartment" id="apartment">
+            <div class="service-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Apartment Cleaning</h3>
+              <p class="service-desc">Complete apartment cleaning with extra attention to detail and a fresh scent
+                everywhere.</p>
+              <div class="service-price">
+                <span class="price">90 LYD</span>
+                <button class="book-btn" href="#booking">Book Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="service-card" data-service="carpet" id="carpet">
+            <div class="service-icon">
+              <i class="fas fa-rug"></i>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Carpet Cleaning</h3>
+              <p class="service-desc">Deep cleaning for carpets and rugs using modern techniques to remove stains and
+                bad odors.</p>
+              <div class="service-price">
+                <span class="price">70 LYD</span>
+                <button class="book-btn" href="#booking">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Free Travel</h3>
+            <p>We provide free travel within the city for all services.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Same‑Day Booking</h3>
+            <p>You can book any service and get it on the same day.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-tags"></i>
+            <h3>Exclusive Discounts</h3>
+            <p>Ongoing offers and discounts for members and loyal customers.</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Our support team is available around the clock to help you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- stats -->
+    <section class="stats section" id="stats">
+      <div class="container">
+        <h2 class="section-title">Our Stats</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="1200"><span class="stat-value">0</span><span
+                class="plus-sign">+</span></div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="3000"><span class="stat-value">0</span><span
+                class="plus-sign">+</span></div>
+            <div class="stat-label">Jobs Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="24">0</div>
+            <div class="stat-label">Support Hours</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Referral Section -->
+    <section class="referral section" id="offers">
+      <div class="container">
+        <h2>Get 2% off when someone signs up via your link</h2>
+        <p>Share your referral link with friends and family and get 2% off every service they book through your link.
+        </p>
+        <div class="referral-row">
+          <div class="referral-code">
             https://BuzzyBee.com/invite/OrjwanRaghad
           </div>
-<button class="btn btn-secondary send-btn">Copy Link</button>
-</div>
-</div>
-</section>
-<!-- Booking Form -->
-<section class="booking section" id="booking">
-<div class="container">
-<div class="booking-form">
-<h2 class="form-title">Book Your Service Now</h2>
-<form action="#" id="bookingForm" method="post">
-<div class="form-row">
-<div class="form-group">
-<label for="name">Full Name *</label>
-<input class="form-control" id="name" placeholder="Example: Orjwan Alayeb" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="phone">Phone Number *</label>
-<input class="form-control" id="phone" pattern="09[1-9][0-9]{7}" placeholder="09XXXXXXXX" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label for="service">Service Type *</label>
-<select class="form-control" id="service" required="">
-<option value="">Choose a service</option>
-<option value="house">House Cleaning</option>
-<option value="apartment">Apartment Cleaning</option>
-<option value="carpet">Carpet Cleaning</option>
-</select>
-<div class="price-box">Estimated Price:<span id="servicePrice">—</span>LYD</div>
-</div>
-<div class="form-row">
-<div class="form-group">
-<label for="date">Preferred Date *</label>
-<input class="form-control" id="date" required="" type="date"/>
-</div>
-<div class="form-group">
-<label for="time">Preferred Time *</label>
-<select class="form-control" id="time" required="">
-<option value="">Select a time</option>
-<option value="morning">8 AM – 12 PM</option>
-<option value="afternoon">12 PM – 4 PM</option>
-<option value="evening">4 PM – 8 PM</option>
-</select>
-</div>
-</div>
-<div class="form-group">
-<label for="address">Address Details *</label>
-<textarea class="form-control" id="address" placeholder="Neighborhood, street, house number, apartment..." required="" rows="3"></textarea>
-</div>
-<div class="form-group">
-<label for="notes">Additional Notes (optional)</label>
-<textarea class="form-control" id="notes" placeholder="Any notes about the service..." rows="2"></textarea>
-</div>
-<button class="btn btn-primary" style="width: 100%; padding: 16px;" type="submit">
-<i class="fas fa-check-circle"></i>Confirm Booking</button>
-</form>
-</div>
-</div>
-</section>
-<!-- Booking Confirmation Modal -->
-<div aria-hidden="true" class="modal" id="confirmModal">
-<div aria-modal="true" class="modal-box" role="dialog">
-<!-- زر الإغلاق الوحيد -->
-<button aria-label="Close" class="modal-close" id="modalCloseBtn">×</button>
-<h2>✅ Your request has been received</h2>
-<p class="modal-sub">Thanks for choosing us<strong>Buzzy Bee</strong>🐝 We will contact you shortly to confirm the appointment and details.</p>
-<div class="modal-summary" id="modalSummary"></div>
-</div>
-</div>
-<!-- Map Section -->
-<section class="map section" id="map">
-<div class="map-container">
-<div class="map-header">
-<h2 class="section-title">Our Location</h2>
-<p class="section-subtitle">You can view our location on the map (Tripoli, Libya).</p>
-</div>
-<div class="map-frame">
-<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Tripoli,Libya&amp;output=embed">
-</iframe>
-</div>
-</div>
-</section>
-</main>
-<button class="scroll-top" id="scrollTopBtn" title="Back to top">
-<i class="fas fa-arrow-up"></i>
-</button>
-<!-- Footer -->
-<section class="section footer-section" id="about-us">
-<footer>
-<div class="container">
-<div class="footer-grid">
-<div class="footer-column">
-<h3>Cleaning Services</h3>
-<p>We provide the best home and office cleaning at competitive prices and high quality. A trained team and modern tools to ensure your satisfaction.</p>
-<div class="social-links">
-<a href="https://twitter.com/merrymaids" target="_blank"><i class="fab fa-twitter"></i></a>
-<a href="https://www.facebook.com/merrymaids" target="_blank"><i class="fab fa-facebook-f"></i></a>
-<a href="https://www.instagram.com/merrymaids" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-</div>
-</div>
-<div class="footer-column">
-<h3>Quick Links</h3>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#offers">Offers</a></li>
-<li><a href="#booking">Booking</a></li>
-<li><a href="signin.html">Sign In</a></li>
-</ul>
-</div>
-<div class="footer-column">
-<h3>Our Services</h3>
-<ul>
-<li><a href="#house">House Cleaning</a></li>
-<li><a href="#apartment">Apartment Cleaning</a></li>
-<li><a href="#carpet">Carpet Cleaning</a></li>
-</ul>
-</div>
-<div class="footer-column">
-<h3>Contact Info</h3>
-<ul>
-<li><i class="fas fa-phone"></i> 0944453531</li>
-<li><i class="fas fa-envelope"></i> info@clean-service.com</li>
-<li><i class="fas fa-map-marker-alt"></i> Tripoli, Libya</li>
-<li><i class="fas fa-clock"></i> 8 AM – 10 PM (Daily)</li>
-<li><i class="fas fa-laptop-code"></i> Developed by: Orjwan Elayeb &amp; Raghad Ammar</li>
-</ul>
-</div>
-</div>
-<div class="copyright">
-<p>All rights reserved © 2025 Cleaning Services | Terms &amp; Policies | Data Privacy</p>
-</div>
-</div>
-</footer>
-</section>
-<div class="toast" id="toast">📋 Referral link copied successfully!</div>
-<script src="script-en.js"></script>
+          <button class="btn btn-secondary send-btn">Copy Link</button>
+        </div>
+      </div>
+    </section>
+    <!-- Booking Form -->
+    <section class="booking section" id="booking">
+      <div class="container">
+        <div class="booking-form">
+          <h2 class="form-title">Book Your Service Now</h2>
+          <form action="#" id="bookingForm" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input class="form-control" id="name" placeholder="Example: Orjwan Alayeb" required="" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input class="form-control" id="phone" pattern="09[1-9][0-9]{7}" placeholder="09XXXXXXXX" required=""
+                  type="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Type *</label>
+              <select class="form-control" id="service" required="">
+                <option value="">Choose a service</option>
+                <option value="house">House Cleaning</option>
+                <option value="apartment">Apartment Cleaning</option>
+                <option value="carpet">Carpet Cleaning</option>
+              </select>
+              <div class="price-box">Estimated Price:<span id="servicePrice">—</span>LYD</div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input class="form-control" id="date" required="" type="date" />
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time *</label>
+                <select class="form-control" id="time" required="">
+                  <option value="">Select a time</option>
+                  <option value="morning">8 AM – 12 PM</option>
+                  <option value="afternoon">12 PM – 4 PM</option>
+                  <option value="evening">4 PM – 8 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Address Details *</label>
+              <textarea class="form-control" id="address" placeholder="Neighborhood, street, house number, apartment..."
+                required="" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="notes">Additional Notes (optional)</label>
+              <textarea class="form-control" id="notes" placeholder="Any notes about the service..."
+                rows="2"></textarea>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; padding: 16px;" type="submit">
+              <i class="fas fa-check-circle"></i>Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Booking Confirmation Modal -->
+    <div aria-hidden="true" class="modal" id="confirmModal">
+      <div aria-modal="true" class="modal-box" role="dialog">
+        <!-- زر الإغلاق الوحيد -->
+        <button aria-label="Close" class="modal-close" id="modalCloseBtn">×</button>
+        <h2>✅ Your request has been received</h2>
+        <p class="modal-sub">Thanks for choosing us<strong>Buzzy Bee</strong>🐝 We will contact you shortly to confirm
+          the appointment and details.</p>
+        <div class="modal-summary" id="modalSummary"></div>
+      </div>
+    </div>
+    <!-- Map Section -->
+    <section class="map section" id="map">
+      <div class="map-container">
+        <div class="map-header">
+          <h2 class="section-title">Our Location</h2>
+          <p class="section-subtitle">You can view our location on the map (Tripoli, Libya).</p>
+        </div>
+        <div class="map-frame">
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Tripoli,Libya&amp;output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button class="scroll-top" id="scrollTopBtn" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!-- Footer -->
+  <section class="section footer-section" id="about-us">
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Cleaning Services</h3>
+            <p>We provide the best home and office cleaning at competitive prices and high quality. A trained team and
+              modern tools to ensure your satisfaction.</p>
+            <div class="social-links">
+              <a href="https://twitter.com/merrymaids" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/merrymaids" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/merrymaids" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#offers">Offers</a></li>
+              <li><a href="#booking">Booking</a></li>
+              <li><a href="signin.html">Sign In</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="#house">House Cleaning</a></li>
+              <li><a href="#apartment">Apartment Cleaning</a></li>
+              <li><a href="#carpet">Carpet Cleaning</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <ul>
+              <li><i class="fas fa-phone"></i> 0944453531</li>
+              <li><i class="fas fa-envelope"></i> info@clean-service.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> Tripoli, Libya</li>
+              <li><i class="fas fa-clock"></i> 8 AM – 10 PM (Daily)</li>
+              <li><i class="fas fa-laptop-code"></i> Developed by: Orjwan Elayeb &amp; Raghad Ammar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>All rights reserved © 2025 Cleaning Services | Terms &amp; Policies | Data Privacy</p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <div class="toast" id="toast">📋 Referral link copied successfully!</div>
+  <script src="script-en.js"></script>
 </body>
+
 </html>

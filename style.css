@@ -1086,10 +1086,10 @@ footer {
     padding: 0 15px;
   } */
 
-  .header-container {
+    .header-container {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    padding: 0 15px;
   }
 
   .logo {
@@ -1104,6 +1104,13 @@ footer {
 
 .dropdown {
   justify-self: start;
+}
+
+.langBtn{ display:none; }
+/* فاصل قبل اللغة باش تحسيه خيار مستقل */
+.dropdown-content a.lang-item{
+  border-top: 1px solid var(--border);
+  margin-top: 6px;
 }
 
   header {

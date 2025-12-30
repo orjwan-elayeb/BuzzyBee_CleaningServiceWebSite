@@ -1081,6 +1081,27 @@ footer {
     padding: 0 15px;
   }
 
+  .logo {
+  justify-self: center;
+  gap: 10px;
+}
+
+.user-actions {
+  justify-self: end;
+  gap: 8px;
+}
+
+.dropdown {
+  justify-self: start;
+}
+
+.langBtn{ display:none; }
+
+/* فاصل قبل اللغة باش تحسيه خيار مستقل */
+.dropdown-content a.lang-item{
+  border-top: 1px solid var(--border);
+  margin-top: 6px;
+}
   header {
     height: 60px;
   }
