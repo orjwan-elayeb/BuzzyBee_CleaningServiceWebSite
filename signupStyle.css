@@ -44,6 +44,12 @@ html {
 }
 
 
+img{
+  height: 100px;
+  width: 100px;
+}
+
+
 /* welcome section*/
 .welcome-section {
   flex: 1;

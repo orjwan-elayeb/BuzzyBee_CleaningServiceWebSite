@@ -39,6 +39,12 @@ html {
   background-color: #fff;
 }
 
+  img {
+    height: 100px;
+    width: 100px;
+  }
+
+
 .welcome-section {
   flex: 1;
   background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
@@ -405,6 +411,10 @@ html {
     max-width: 100%;
     margin: 0px;
   }
+
+
+
+
 
   .logo-container {
     margin-bottom: 5px;
