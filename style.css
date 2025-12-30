@@ -354,7 +354,7 @@ nav ul li a:hover {
   color: var(--header-link-hover);
   transform: translateY(-3px);
 }
-
+/* 
 nav ul li a.active {
   color: var(--header-link-hover);
   font-weight: 700;
@@ -370,7 +370,7 @@ nav ul li a.active::after {
   height: 2px;
   background: var(--header-link-hover);
   border-radius: 2px;
-}
+} */
 
 /* Header Actions (Theme Toggle) */
 .user-actions {
@@ -390,12 +390,34 @@ nav ul li a.active::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: all 0.2s ease;
 }
 
 .themeBtn:hover {
   background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+
+.langBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--header-btn-bg);
+  color: var(--header-title);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.langBtn:hover {
+  background: rgba(255,255,255,0.3);
   transform: scale(1.05);
 }
 
@@ -1026,7 +1048,6 @@ footer {
 
 
 
-
 /* =========================================
   14. MEDIA QUERIES (RESPONSIVE)
    ========================================= */
@@ -1059,11 +1080,31 @@ footer {
 @media (max-width: 768px) {
 
   /* Header Layout Change */
-  .header-container {
+  /* .header-container {
     display: grid;
     grid-template-columns: auto 1fr auto;
     padding: 0 15px;
+  } */
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
   }
+
+  .logo {
+  justify-self: center;
+  gap: 10px;
+}
+
+.user-actions {
+  justify-self: end;
+  gap: 8px;
+}
+
+.dropdown {
+  justify-self: start;
+}
 
   header {
     height: 60px;
@@ -1131,6 +1172,18 @@ footer {
 
   }
 
+  .themeBtn {
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  
+}
+
+ .langBtn{
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+ }
 }
 
 @media (max-width: 480px) {

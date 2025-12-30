@@ -394,33 +394,33 @@ document.addEventListener("DOMContentLoaded", () => {
  * =========================================
  */
 
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll("nav ul li a");
+// const sections = document.querySelectorAll("section[id]");
+// const navLinks = document.querySelectorAll("nav ul li a");
 
-const spyObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute("id");
+// const spyObserver = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         const id = entry.target.getAttribute("id");
 
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${id}`) {
-            link.classList.add("active");
-          }
-        });
-      }
-    });
-  },
-  {
-    root: null, // viewport
-    rootMargin: "-10% 0px -70% 0px",
-threshold: 0
-  }
-);
+//         navLinks.forEach((link) => {
+//           link.classList.remove("active");
+//           if (link.getAttribute("href") === `#${id}`) {
+//             link.classList.add("active");
+//           }
+//         });
+//       }
+//     });
+//   },
+//   {
+//     root: null, // viewport
+//     rootMargin: "-10% 0px -70% 0px",
+// threshold: 0
+//   }
+// );
 
-// Observe each section
-sections.forEach((section) => spyObserver.observe(section));
+// // Observe each section
+// sections.forEach((section) => spyObserver.observe(section));
 
 //sign in / sign up
 
