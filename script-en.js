@@ -444,3 +444,33 @@ document.addEventListener("DOMContentLoaded", () => {
 //   }
 // });
 })
+
+function showToast(message) {
+  // If a static toast already exists on the page, use it
+  let toast = document.getElementById("toast");
+
+  // If it doesn't exist (like in signin/signup pages), create it once
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "toast";
+    toast.className = "toast";
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(toast._hideTimer);
+  toast._hideTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2500);
+}
+
+function fakeAuth(provider) {
+  showToast(`Successfully signed in with ${provider}`);
+
+  setTimeout(() => {
+    window.location.href = "index-en.html"; // English homepage
+  }, 1200);
+}
+

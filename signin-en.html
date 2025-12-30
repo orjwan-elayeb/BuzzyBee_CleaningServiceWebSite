@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Buzzy Bee Cleaning Services</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="/BuzzyBee_CleaningServiceWebSite/assets/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="signInStyle-en.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="welcome-section">
+      <div class="logo-container">
+        <div class="logo"><img src="assets/image/logo (1).png" alt="logo"></div>
+      </div>
+
+      <div class="company-name">Buzzy Bee</div>
+      <div class="company-subtitle">Professional Cleaning Services</div>
+
+      <h1>Welcome Back!</h1>
+      <p>Start your journey by signing in to the Cleaning Services Management System.</p>
+
+      <div class="features">
+        <div class="feature"><i class="fas fa-home"></i> Home Cleaning</div>
+        <div class="feature"><i class="fas fa-building"></i> Apartment Cleaning</div>
+        <div class="feature"><i class="fas fa-couch"></i> Carpet Cleaning</div>
+      </div>
+    </div>
+
+    <div class="login-section">
+      <div class="login-header">
+        <h2>Sign In</h2>
+        <p>Please enter your login details</p>
+      </div>
+
+      <form id="loginForm" action="index-en.html">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" class="form-control"
+              placeholder="Enter username or email" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" class="form-control"
+              placeholder="Enter your password" autocomplete="off" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-login">
+          <i class="fas fa-sign-in-alt"></i> Sign In
+        </button>
+
+        <div class="forgot-password">
+          <a href="#"><i class="fas fa-key"></i> Forgot your password?</a>
+        </div>
+
+        <div class="social-login">
+          <button type="button" class="btn-social btn-google" onclick="fakeAuth('Google')">
+            <i class="fab fa-google social-icon"></i> Sign in with Google
+          </button>
+
+          <button type="button" class="btn-social btn-facebook" onclick="fakeAuth('Facebook')">
+            <i class="fab fa-facebook-f social-icon"></i> Sign in with Facebook
+          </button>
+        </div>
+
+        <div class="signup-Now">Don't have an account? <a href="signup-en.html">Sign up now</a></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script-en.js"></script>
+</body>
+
+</html>
