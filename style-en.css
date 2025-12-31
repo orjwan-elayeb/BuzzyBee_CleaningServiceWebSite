@@ -339,7 +339,7 @@ header {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--header-title);
-  letter-spacing: 0.5px;
+  white-space: nowrap;
 }
 
 /* Navigation Menu */
@@ -770,7 +770,6 @@ nav ul li a.active::after {
   border: 1px solid var(--primary);
   font-weight: 700;
   color: var(--text);
-  text-align: right;
 }
 
 .price-box #servicePrice {
